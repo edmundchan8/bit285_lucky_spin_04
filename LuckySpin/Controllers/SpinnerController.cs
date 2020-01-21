@@ -45,6 +45,8 @@ namespace LuckySpin.Controllers
             else
                 spin.Display = "none";
 
+            ViewBag.name = player.name;
+
             //Send the spin object to the View
             return View(spin);
         }
